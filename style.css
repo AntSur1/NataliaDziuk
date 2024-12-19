@@ -1,0 +1,214 @@
+:root {
+  --color1: #614291;
+  --color2: #845a91;
+  --color3: #abc2e3;
+  --color-dark: #1d2331;
+  --color-light: #e0e5ee;
+  --primary-background-color: var(--color-light);
+  --navbar-color: var(--color1);
+  --navbar-hover-color: var(--color2);
+  --footer-color: var(--color-dark);
+  --footer-text-color: var(--color-light);
+  --primary-text-color: var(--color-light);
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v142/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.inline-icon {
+  transform: translateY(7px) translateX(-10px);
+}
+
+.invert-c {
+  filter: invert(100);
+}
+
+.hide {
+  display: none;
+}
+
+
+/* General utils*/
+body {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  margin:0;
+  height: 100%;
+}
+
+h1, h2, h3, h4{
+  font-weight: 450;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* NAV styles */
+.nav-item a {
+  display: block;
+  color: var(--primary-background-color);
+  text-align: center;
+  text-decoration: none;
+  padding: 27px 32px;
+}
+
+.nav-item a:hover {
+  background-color: var(--navbar-hover-color);
+}
+
+#main-content {
+  margin-top: 75px;
+}
+
+.nav-links {
+  background: var(--navbar-color);
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  width: 100%;
+}
+
+.sub-menu {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#menu-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#drop-down-menu {
+  display: block; /* Show the dropdown menu */
+  width: 100%; /* Make it full width */
+  overflow: hidden;
+}
+
+.main-menu {
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+
+/* DESKTOP */
+@media only screen and (min-width: 1070px) {
+  #mobile {
+    display: none;
+  }
+
+  #desktop {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .nav-links {
+    padding: 0 10%;
+    justify-content: space-between;
+  }
+  
+  .nav-links li {
+    float: left;
+    margin: 0 10px 0 10px;
+  }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 1070px) {
+  #mobile {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  .nav-links {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/**   OTHER THINGS    */
+
+#front-page{
+  position:relative;
+  text-align: center;
+}
+
+#front-page h1{
+  position: absolute;
+  top: 140px;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+
+}
+
+
+
+
+/* footer styles*/
+#footer {
+  color: var(--footer-text-color);
+  background-color: var(--footer-color);
+  padding: 30px;
+}
+
+
+.footer-item {
+  max-width: 400px;
+}
+
+footer ul{
+  list-style: none;
+  margin: 0;
+}
+
+footer a{
+  color: inherit;
+}
+
+footer h3 {
+  font-weight: 600;
+}
