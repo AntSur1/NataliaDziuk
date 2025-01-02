@@ -1,0 +1,65 @@
+
+body {
+	background: #2e3842;
+}
+
+
+.wrapper.style1 select option {
+	color: #ffffff;
+	background: #21b2a6;
+}
+
+
+.wrapper.style1 input[type="radio"] + label {
+	color: #c8ece9;
+}
+
+.wrapper.style1 input[type="radio"]:checked + label:before {
+	background: #ffffff;
+	color: #21b2a6;
+}
+
+.wrapper.style1 ::-webkit-input-placeholder {
+	color: #a6e0db !important;
+}
+
+.wrapper.style1 :-moz-placeholder {
+	color: #a6e0db !important;
+}
+
+.wrapper.style1 ::-moz-placeholder {
+	color: #a6e0db !important;
+}
+
+.wrapper.style1 :-ms-input-placeholder {
+	color: #a6e0db !important;
+}
+
+.wrapper.style1 .formerize-placeholder {
+	color: #a6e0db !important;
+}
+
+.wrapper.style3 select option {
+	color: #ffffff;
+	background: #505393;
+}
+			
+
+.wrapper.style3 input[type="radio"]:checked + label:before {
+	background: #ffffff;
+	color: #505393;
+}
+
+#menu {
+	background: #21b2a6;
+	color: #ffffff;
+}
+	
+
+#header {
+	background: #2e3842;
+}
+	
+#banner:after {
+		background: #2e3842;
+}
