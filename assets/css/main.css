@@ -3407,20 +3407,30 @@ button,
 
 				}
 
-	#menu .close {
-		background-image: url("images/close.svg");
-		background-position: 4.85em 1em;
-		background-repeat: no-repeat;
-		border: 0;
-		cursor: pointer;
-		display: block;
-		height: 3em;
-		position: absolute;
-		right: 0;
-		top: 0;
-		vertical-align: middle;
-		width: 7em;
-	}
+				#menu .close {
+					background-image: url("images/close.svg");
+					background-position: 4.85em 1em;
+					background-repeat: no-repeat;
+					border: 0;
+					cursor: pointer;
+					display: block;
+					height: 3em;
+					position: absolute;
+					right: 0;
+					top: 0;
+					vertical-align: middle;
+					width: 7em;
+				}
+
+				#menu .icon::before {
+					display: inline;          /* Keeps it inline but allows styling */
+					vertical-align: middle;         /* Aligns with text */
+					font-size: 1.5em;
+					margin-right: 1em;            /* Space between the image and text */
+				  }
+
+
+				  
 
 	@media screen and (max-width: 736px) {
 
@@ -3524,18 +3534,18 @@ body.is-menu-visible #menu {
 						position: relative;
 					}
 
-						#header nav > ul > li > a.menuToggle:after {
-							background-image: url("images/bars.svg");
-							background-position: right center;
-							background-repeat: no-repeat;
-							background-size: 80%;
-							content: '';
-							display: inline-block;
-							height: 6.35em;	/*OLD 3.75*/
-							vertical-align: top;
-							width: 2em;  /*OLD 2*/
-							margin-left: 1.5em;
-						}
+					#header nav > ul > li > a.menuToggle:after {
+						background-image: url("images/bars.svg");
+						background-position: right center;
+						background-repeat: no-repeat;
+						background-size: 80%;
+						content: '';
+						display: inline-block;
+						height: 6.35em;	/*OLD 3.75*/
+						vertical-align: top;
+						width: 2em;  /*OLD 2*/
+						margin-left: 1.5em;
+					}
 
 						@media screen and (max-width: 736px) {
 
@@ -3898,110 +3908,71 @@ body.is-mobile #main > header {
 	background-color: white;
 	border-radius: 5px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-			0 10px 10px rgba(0,0,0,0.22);
+			    0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
 	overflow: hidden;
 	width: 768px;
 	max-width: 100%;
 	min-height: 480px;
-  min-width:370px;
+  	min-width:370px;
 }
 
-h2 {
-  font-size:2rem;
-  margin-bottom:1rem;
+.contact h2 {
+	font-size:2rem;
+	margin-bottom:1rem;
 }
 .form-container {
-  display:flex;
+ 	display:flex;
 }
 
 .left-container {
-  flex:1;
-  height:480px;
-  background-color: var(--blue);
+	flex:1;
+	height:480px;
+	background-color: var(--blue);
 }
+
 .right-container {
-  display:flex;
-  flex:1;
-  height:460px;
-  background-color: white;
-  justify-content:center;
-  align-items:center;
+	display:flex;
+	flex:1;
+	height:460px;
+	background-color: white;
+	justify-content:center;
+	align-items:center;
 }
 
 .left-container {
-  display:flex;
-  flex:1;
-  height:480px;
-  justify-content:center;
-  align-items:center;
-  color:white;
+	display:flex;
+	flex:1;
+	height:480px;
+	justify-content:center;
+	align-items:center;
+	color:white;
 }
 
 .left-container p {
-  font-size:0.9rem;
+	font-size:0.9rem;
 }
 
 .right-inner-container {
-  width:70%;
-  height:80%;
-  text-align:center;
+	width:70%;
+	height:80%;
+	text-align:center;
 }
 
 .left-inner-container {
-  height:50%;
-  width:80%;
-  text-align:center;
-  line-height:22px;
+	height:50%;
+	width:80%;
+	text-align:center;
+	line-height:22px;
 }
 
-input, textarea {
-	background-color: #eee;
-	border: none;
-	padding: 12px 15px;
-	margin: 8px 0;
-	width: 100%;
-  font-size:0.8rem;
-}
-
-input:focus, textarea:focus{
-  outline:1px solid var(--blue);
-}
-
-button {
-	border-radius: 20px;
-	border: 1px solid #00b4cf;
-	background-color: #00b4cf;
-	color: #FFFFFF;
-	font-size: 12px;
-	font-weight: bold;
-	padding: 12px 45px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	transition: transform 80ms ease-in;
-  cursor:pointer;
-}
-
-button:hover {
-  opacity:0.7;
-}
 @media only screen and (max-width: 600px) {
-  .left-container{
-    display: none;
-  }
-  .lg-view {
-    display:none;  
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .sm-view {
-    display:none;  
-  }
-}
-
-form p {
-  text-align:left;
+	.left-container{
+		display: none;
+	}
+	.lg-view {
+		display:none;  
+	}
 }
 
 
