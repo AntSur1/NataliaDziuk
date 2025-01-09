@@ -472,7 +472,7 @@ pre {
 	}
 
 		.row.gtr-50 > * {
-			padding: 0 0 0 0.75em;
+			padding: 0 0 0 1.5em;
 		}
 
 		.row.gtr-50.gtr-uniform {
@@ -2132,7 +2132,7 @@ input[type="radio"] + label:before {
 
 	.image.fit {
 		display: block;
-		margin: 0 0 2em 0;
+		margin: 0 0 1.5em 0;
 		width: 100%;
 	}
 
@@ -3478,10 +3478,28 @@ body.is-menu-visible #menu {
 		-ms-transition: opacity 0.2s ease;
 		transition: opacity 0.2s ease;
 		height: inherit;
-		left: 1.875em;
-		line-height: inherit;
+		/* 
+		left: 1.875em; 
 		position: absolute;
+		*/
+		margin-left: 1em;
+		line-height: inherit;
 		top: 0;
+	}
+
+	.nav-img {
+		height: 100%;
+		justify-content: center;
+		position: inherit;
+	}
+	
+	.test {
+		left: 1.875em;
+		position: relative;
+		display: flex;
+		width: 100%;
+		height: 100%;
+		
 	}
 
 		#header h1 a {
@@ -3976,7 +3994,6 @@ body.is-mobile #main > header {
 }
 
 
-
 /* Footer */
 
 #footer {
@@ -4091,4 +4108,8 @@ body.is-mobile.landing .wrapper.style4 {
 
 body.is-mobile.landing #footer {
 	background-color: rgb(29, 36, 42);
+}
+
+.order-col {
+
 }
