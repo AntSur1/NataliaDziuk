@@ -3472,6 +3472,10 @@ body.is-menu-visible #menu {
 	z-index: 10000;
 }
 
+	#header > :first-child {
+		margin-left: 1em;
+	}
+
 	#header h1 {
 		-moz-transition: opacity 0.2s ease;
 		-webkit-transition: opacity 0.2s ease;
@@ -3482,7 +3486,6 @@ body.is-menu-visible #menu {
 		left: 1.875em; 
 		position: absolute;
 		*/
-		margin-left: 1em;
 		line-height: inherit;
 		top: 0;
 	}
@@ -3494,7 +3497,6 @@ body.is-menu-visible #menu {
 	}
 	
 	.test {
-		left: 1.875em;
 		position: relative;
 		display: flex;
 		width: 100%;
