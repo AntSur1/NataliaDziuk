@@ -3498,9 +3498,11 @@ body.is-menu-visible #menu {
 	
 	.test {
 		position: relative;
-		display: flex;
-		width: 100%;
+		display: inline-flex;
 		height: 100%;
+		border: 0;
+
+
 		
 	}
 
