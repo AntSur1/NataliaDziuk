@@ -3570,6 +3570,11 @@ body.is-menu-visible #menu {
 					}
 
 						@media screen and (max-width: 736px) {
+							/*
+							#header > a > img {
+								display: none;
+							}
+							*/
 
 							#header nav > ul > li > a.menuToggle {
 								padding: 0 1.5em;
@@ -3866,6 +3871,16 @@ body.is-preload #banner:after {
 	text-align: center;
 }
 
+#head {
+	padding: 12em 0 30em 0 !important;
+	background-image: -moz-linear-gradient(			top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/img_girl.jpg") !important;
+	background-image: -webkit-linear-gradient(	top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/img_girl.jpg") !important;
+	background-image: -ms-linear-gradient(			top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/img_girl.jpg") !important;
+	background-image: linear-gradient(					top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/img_girl.jpg") !important;
+	background-position: top !important;
+	background-attachment: scroll !important;
+}
+
 	#main > header h2 {
 		font-size: 1.75em;
 		margin: 0 0 0.5em 0;
@@ -4116,8 +4131,4 @@ body.is-mobile.landing .wrapper.style4 {
 
 body.is-mobile.landing #footer {
 	background-color: rgb(29, 36, 42);
-}
-
-.order-col {
-
 }
