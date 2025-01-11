@@ -3399,6 +3399,7 @@ button,
 				text-transform: uppercase;
 			}
 
+
 				@media screen and (max-width: 736px) {
 
 					#menu ul > li > a {
@@ -3421,6 +3422,7 @@ button,
 					vertical-align: middle;
 					width: 7em;
 				}
+
 
 				#menu .icon::before {
 					display: inline;          /* Keeps it inline but allows styling */
@@ -3956,14 +3958,17 @@ body.is-mobile #main > header {
 	max-width: 100%;
 	min-height: 480px;
   	min-width:370px;
+	display: flex;
+}
+
+.contact-parent {
+	display: flex;
+	justify-content:center;
 }
 
 .contact h2 {
 	font-size:2rem;
 	margin-bottom:1rem;
-}
-.form-container {
- 	display:flex;
 }
 
 .left-container {
@@ -3990,22 +3995,62 @@ body.is-mobile #main > header {
 	color:white;
 }
 
-.left-container p {
-	font-size:0.9rem;
+.contact p {
+	font-size: 0.9rem;
 }
 
 .right-inner-container {
-	width:70%;
-	height:80%;
-	text-align:center;
+	height:70%;
 }
 
 .left-inner-container {
-	height:50%;
-	width:80%;
+	height:70%;
+	width: 80%;
 	text-align:center;
 	line-height:22px;
 }
+
+.left-inner-container img {
+	width: 100%;
+}
+
+.contact ul {
+	list-style: none;
+	padding-left: 0.6em !important;
+	margin-top: 2em;
+}
+
+.contact ul li {
+	margin-top: 1em;
+}
+
+.contact ul li a:hover {
+	color: rgb(34, 33, 33);
+}
+
+.contact ul li a::before {
+	display: inline;
+  vertical-align: middle;
+}
+
+#size3-icon-adj {
+	font-size: 0.9rem;
+}
+
+	#size1-icon-adj::before {
+		font-size: 22px;
+		margin-right: 15px;
+	}
+
+	#size2-icon-adj::before {
+		font-size: 1.5em;
+		margin-right: 17px;
+	}
+
+	#size3-icon-adj::before {
+		font-size: 24px;
+		margin-right: 19px;
+	}
 
 @media only screen and (max-width: 600px) {
 	.left-container{
