@@ -1,17 +1,17 @@
-
+// https://github.com/nextapps-de/spotlight?tab=readme-ov-file
 
 document.addEventListener("DOMContentLoaded", function () {
   // List of image file paths
-  const imagePaths = [
-    "images/pic01.jpg",
-    "images/pic06.jpg",
-    "images/pic03.jpg",
-    "images/pic06.jpg",
-    "images/pic04.jpg",
-    "images/pic01.jpg",
-    "images/pic02.jpg",
-    "images/pic01.jpg",
-    "images/pic03.jpg"
+  const imageData = [
+    {path:"images/pic01.jpg",title:"name",desc:"Test desc"},
+    {path:"images/pic06.jpg",title:"name",desc:"Test desc"},
+    {path:"images/pic03.jpg",title:"name",desc:"Test desc"},
+    {path:"images/pic06.jpg",title:"name",desc:"Test desc"},
+    {path:"images/pic04.jpg",title:"name",desc:"Test desc"},
+    {path:"images/pic01.jpg",title:"name",desc:"Test desc"},
+    {path:"images/pic02.jpg",title:"name",desc:"Test desc"},
+    {path:"images/pic01.jpg",title:"name",desc:"Test desc"},
+    {path:"images/pic03.jpg",title:"name",desc:"Test desc"}
   ];
 
   // Number of columns
@@ -29,17 +29,15 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Distribute images across the columns
-  imagePaths.forEach((path, index) => {
+  imageData.forEach((item, index) => {
     const colIndex = index % numColumns; // Determine the column for this image
     const imageHTML = `
       <span class="image fit">
-        <a data-fslightbox="gallery" href="${path}">
-          <img src="${path}" alt="" />
+        <a class="spotlight" href="${item.path}" data-description="${item.desc}" data-page="true" data-autofit="false" data-infinite="true" data-fullscreen="false" data-autohide="1"  data-download="true">
+          <img src="${item.path}" alt="Image nr ${item.title}" />
         </a>
       </span>
     `;
     columns[colIndex].innerHTML += imageHTML; // Add the image to the appropriate column
   });
-
-  refreshFsLightbox();
 });

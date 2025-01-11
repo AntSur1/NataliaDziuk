@@ -3924,6 +3924,10 @@ body.is-mobile #main > header {
 }
 
 
+.gallery-Container a {
+	border: 0;
+}
+
 /* Contact */
 
 .contact {
