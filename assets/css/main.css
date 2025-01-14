@@ -3950,6 +3950,10 @@ body.is-mobile #main > header {
 	border-bottom: dotted 1px;
 }
 
+a {
+	color:red !important
+}
+
 /* Contact */
 
 .contact {
