@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const colIndex = index % numColumns; // Determine the column for this image
     const imageHTML = `
       <span class="image fit">
-        <a class="spotlight" href="${item.path}" data-description="${item.desc}" data-page="true" data-autofit="false" data-infinite="true" data-fullscreen="false" data-autohide="1"  data-download="true">
+        <a class="spotlight" href="${item.path}" data-description="${item.desc}" data-page="true" data-autofit="false" data-infinite="true" data-fullscreen="false" data-autohide="false"  data-download="true">
           <img src="${item.path}" alt="Image nr ${item.title}" />
         </a>
       </span>

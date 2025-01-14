@@ -3945,6 +3945,10 @@ body.is-mobile #main > header {
 	border: 0;
 }
 
+.show-link {
+	text-decoration: underline;
+}
+
 /* Contact */
 
 .contact {
