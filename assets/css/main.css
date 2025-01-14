@@ -3947,6 +3947,7 @@ body.is-mobile #main > header {
 
 .show-link {
 	text-decoration: underline;
+	border-bottom: dotted 1px;
 }
 
 /* Contact */
