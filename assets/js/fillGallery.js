@@ -1,24 +1,42 @@
 // https://github.com/nextapps-de/spotlight?tab=readme-ov-file
 
-document.addEventListener("DOMContentLoaded", function () {
-  // List of image file paths
-  const imageData = [
-    {path:"images/pic01.jpg",title:"name",desc:"Test desc"},
-    {path:"images/pic06.jpg",title:"name",desc:"Test desc"},
-    {path:"images/pic03.jpg",title:"name",desc:"Test desc"},
-    {path:"images/pic06.jpg",title:"name",desc:"Test desc"},
-    {path:"images/pic04.jpg",title:"name",desc:"Test desc"},
-    {path:"images/pic01.jpg",title:"name",desc:"Test desc"},
-    {path:"images/pic02.jpg",title:"name",desc:"Test desc"},
-    {path:"images/pic01.jpg",title:"name",desc:"Test desc"},
-    {path:"images/pic03.jpg",title:"name",desc:"Test desc"}
-  ];
+const selectedImageData = [
+  {path:"images/pic01.jpg",title:"name",desc:"Test desc"},
+  {path:"images/pic06.jpg",title:"name",desc:"Test desc"},
+  {path:"images/pic03.jpg",title:"name",desc:"Test desc"},
+  {path:"images/pic06.jpg",title:"name",desc:"Test desc"},
+  {path:"images/pic04.jpg",title:"name",desc:"Test desc"},
+  {path:"images/pic01.jpg",title:"name",desc:"Test desc"},
+  {path:"images/pic02.jpg",title:"name",desc:"Test desc"},
+  {path:"images/pic01.jpg",title:"name",desc:"Test desc"},
+  {path:"images/pic03.jpg",title:"name",desc:"Test desc"},
+  {path:"images/pic03.jpg",title:"name",desc:"Test desc"},
+];
+
+const sketchImageData = [
+  {path:"images/j.jpg",title:"name",desc:"Test desc"},
+  {path:"images/j.jpg",title:"name",desc:"Test desc"},
+  {path:"images/j.jpg",title:"name",desc:"Test desc"},
+  {path:"images/j.jpg",title:"name",desc:"Test desc"},
+  {path:"images/j.jpg",title:"name",desc:"Test desc"},
+  {path:"images/j.jpg",title:"name",desc:"Test desc"},
+  {path:"images/j.jpg",title:"name",desc:"Test desc"},
+  {path:"images/j.jpg",title:"name",desc:"Test desc"},
+  {path:"images/j.jpg",title:"name",desc:"Test desc"}
+];
+
+
+function reLoadGallery(imageData) {
 
   // Number of columns
   const numColumns = 3;
 
   // Select the gallery container
   const galleryContainer = document.querySelector(".gallery-Container");
+
+  while (galleryContainer.firstChild) {
+    galleryContainer.removeChild(galleryContainer.firstChild);
+  }
 
   // Create column divs dynamically
   const columns = Array.from({ length: numColumns }, () => {
@@ -39,5 +57,19 @@ document.addEventListener("DOMContentLoaded", function () {
       </span>
     `;
     columns[colIndex].innerHTML += imageHTML; // Add the image to the appropriate column
-  });
+  });  
+}
+
+document.addEventListener("DOMContentLoaded", reLoadGallery(selectedImageData));
+
+document.querySelector("button#selected").addEventListener("click", function() {
+  reLoadGallery(selectedImageData);
+  document.querySelector("button#sketch").removeAttribute("class");
+  document.querySelector("button#selected").setAttribute("class", "button primary");
+});
+
+document.querySelector("button#sketch").addEventListener("click", function() {
+  reLoadGallery(sketchImageData);
+  document.querySelector("button#selected").removeAttribute("class");
+  document.querySelector("button#sketch").setAttribute("class", "button primary");
 });

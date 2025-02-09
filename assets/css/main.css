@@ -11,6 +11,8 @@
 :root {
 	--light_c: #986AB0;
 	--dark_c: #614291;
+	--dark_c_dark: #51347e;
+	--dark_c_dark_dark: #3f2764;
 	--blue: #ABC2E3;
   }
 
@@ -2494,7 +2496,7 @@ button,
 	input[type="button"].primary,
 	button.primary,
 	.button.primary {
-		background-color: #ed4933;
+		background-color: var(--dark_c) !important;
 		box-shadow: none !important;
 		color: #ffffff !important;
 	}
@@ -2504,7 +2506,7 @@ button,
 		input[type="button"].primary:hover,
 		button.primary:hover,
 		.button.primary:hover {
-			background-color: #ef5e4a !important;
+			background-color: var(--dark_c_dark) !important;
 		}
 
 		input[type="submit"].primary:active,
@@ -2512,7 +2514,7 @@ button,
 		input[type="button"].primary:active,
 		button.primary:active,
 		.button.primary:active {
-			background-color: #eb341c !important;
+			background-color: var(--dark_c_dark_dark) !important;
 		}
 
 	input[type="submit"].disabled, input[type="submit"]:disabled,
