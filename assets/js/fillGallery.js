@@ -1,28 +1,30 @@
 // https://github.com/nextapps-de/spotlight?tab=readme-ov-file
 
+const selectedImagePath = "images/gallery/selected/";
 const selectedImageData = [
-  {path:"images/pic01.jpg",title:"name",desc:"Test desc"},
-  {path:"images/pic06.jpg",title:"name",desc:"Test desc"},
-  {path:"images/pic03.jpg",title:"name",desc:"Test desc"},
-  {path:"images/pic06.jpg",title:"name",desc:"Test desc"},
-  {path:"images/pic04.jpg",title:"name",desc:"Test desc"},
-  {path:"images/pic01.jpg",title:"name",desc:"Test desc"},
-  {path:"images/pic02.jpg",title:"name",desc:"Test desc"},
-  {path:"images/pic01.jpg",title:"name",desc:"Test desc"},
-  {path:"images/pic03.jpg",title:"name",desc:"Test desc"},
-  {path:"images/pic03.jpg",title:"name",desc:"Test desc"},
+  {path: selectedImagePath + "pic01.jpg", title:"name", desc:"Test desc"},
+  {path: selectedImagePath + "pic06.jpg", title:"name", desc:"Test desc"},
+  {path: selectedImagePath + "pic03.jpg", title:"name", desc:"Test desc"},
+  {path: selectedImagePath + "pic06.jpg", title:"name", desc:"Test desc"},
+  {path: selectedImagePath + "pic04.jpg", title:"name", desc:"Test desc"},
+  {path: selectedImagePath + "pic01.jpg", title:"name", desc:"Test desc"},
+  {path: selectedImagePath + "pic02.jpg", title:"name", desc:"Test desc"},
+  {path: selectedImagePath + "pic01.jpg", title:"name", desc:"Test desc"},
+  {path: selectedImagePath + "pic03.jpg", title:"name", desc:"Test desc"},
+  {path: selectedImagePath + "pic03.jpg", title:"name", desc:"Test desc"},
 ];
 
+const sketchImagePath = "images/gallery/sketches/";
 const sketchImageData = [
-  {path:"images/j.jpg",title:"name",desc:"Test desc"},
-  {path:"images/j.jpg",title:"name",desc:"Test desc"},
-  {path:"images/j.jpg",title:"name",desc:"Test desc"},
-  {path:"images/j.jpg",title:"name",desc:"Test desc"},
-  {path:"images/j.jpg",title:"name",desc:"Test desc"},
-  {path:"images/j.jpg",title:"name",desc:"Test desc"},
-  {path:"images/j.jpg",title:"name",desc:"Test desc"},
-  {path:"images/j.jpg",title:"name",desc:"Test desc"},
-  {path:"images/j.jpg",title:"name",desc:"Test desc"}
+  {path: sketchImagePath + "j.jpg", title:"name", desc:"Test desc"},
+  {path: sketchImagePath + "j.jpg", title:"name", desc:"Test desc"},
+  {path: sketchImagePath + "j.jpg", title:"name", desc:"Test desc"},
+  {path: sketchImagePath + "j.jpg", title:"name", desc:"Test desc"},
+  {path: sketchImagePath + "j.jpg", title:"name", desc:"Test desc"},
+  {path: sketchImagePath + "j.jpg", title:"name", desc:"Test desc"},
+  {path: sketchImagePath + "j.jpg", title:"name", desc:"Test desc"},
+  {path: sketchImagePath + "j.jpg", title:"name", desc:"Test desc"},
+  {path: sketchImagePath + "j.jpg", title:"name", desc:"Test desc"}
 ];
 
 
@@ -51,7 +53,7 @@ function reLoadGallery(imageData) {
     const colIndex = index % numColumns; // Determine the column for this image
     const imageHTML = `
       <span class="image fit">
-        <a class="spotlight" href="${item.path}" data-description="${item.desc}" data-page="true" data-autofit="false" data-infinite="true" data-fullscreen="false" data-autohide="false"  data-download="true">
+        <a class="spotlight" href="${item.path}" data-description="${item.desc}" data-page="true" data-autofit="false" data-infinite="true" data-fullscreen="false" data-autohide="false" data-download="true">
           <img src="${item.path}" alt="Image nr ${item.title}" />
         </a>
       </span>
