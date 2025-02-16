@@ -1,6 +1,6 @@
 // https://github.com/nextapps-de/spotlight?tab=readme-ov-file
 
-const selectedImagePath = "images/gallery/selected/";
+const selectedImagePath = "assets/images/gallery/featured/";
 const selectedImageData = [
   {path: selectedImagePath + "pic01.jpg", title:"name", desc:"Test desc"},
   {path: selectedImagePath + "pic06.jpg", title:"name", desc:"Test desc"},
@@ -14,7 +14,7 @@ const selectedImageData = [
   {path: selectedImagePath + "pic03.jpg", title:"name", desc:"Test desc"},
 ];
 
-const sketchImagePath = "images/gallery/sketches/";
+const sketchImagePath = "assets/images/gallery/sketches/";
 const sketchImageData = [
   {path: sketchImagePath + "j.jpg", title:"name", desc:"Test desc"},
   {path: sketchImagePath + "j.jpg", title:"name", desc:"Test desc"},
