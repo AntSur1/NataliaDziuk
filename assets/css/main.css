@@ -3873,10 +3873,10 @@ body.is-preload #banner:after {
 
 #head {
 	padding: 12em 0 30em 0 !important;
-	background-image: -moz-linear-gradient(			top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/assets/img_girl.jpg") !important;
-	background-image: -webkit-linear-gradient(	top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/assets/img_girl.jpg") !important;
-	background-image: -ms-linear-gradient(			top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/assets/img_girl.jpg") !important;
-	background-image: linear-gradient(					top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/assets/img_girl.jpg") !important;
+	background-image: -moz-linear-gradient(			top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/assets/head.jpg") !important;
+	background-image: -webkit-linear-gradient(	top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/assets/head.jpg") !important;
+	background-image: -ms-linear-gradient(			top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/assets/head.jpg") !important;
+	background-image: linear-gradient(					top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/assets/head.jpg") !important;
 	background-position: top !important;
 	background-attachment: scroll !important;
 }
