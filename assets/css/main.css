@@ -3499,14 +3499,11 @@ body.is-menu-visible #menu {
 		position: inherit;
 	}
 	
-	.test {
+	.clickable-logo {
 		position: relative;
 		display: inline-flex;
 		height: 100%;
 		border: 0;
-
-
-		
 	}
 
 		#header h1 a {
@@ -4071,6 +4068,12 @@ body.is-mobile #main > header {
 	}
 }
 
+/* About */
+@media screen and (min-width: 980px) {
+	.about_me img {
+		margin-left: 2em;
+	}
+}
 
 /* Footer */
 
