@@ -12,6 +12,8 @@
 	--dark_c: #614291;
 	--dark_c_dark: #51347e;
 	--dark_c_dark_dark: #3f2764;
+	--url_banner: url("../../assets/images/assets/banner.jpg");
+	--url_head: url("../../assets/images/assets/banner.jpg");
   }
 
 html, body, div, span, applet, object,
@@ -3873,10 +3875,10 @@ body.is-preload #banner:after {
 
 #head {
 	padding: 12em 0 30em 0 !important;
-	background-image: -moz-linear-gradient(			top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/assets/head.jpg") !important;
-	background-image: -webkit-linear-gradient(	top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/assets/head.jpg") !important;
-	background-image: -ms-linear-gradient(			top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/assets/head.jpg") !important;
-	background-image: linear-gradient(					top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/assets/head.jpg") !important;
+	background-image: -moz-linear-gradient(			top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/assets/banner.jpg") !important;
+	background-image: -webkit-linear-gradient(	top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/assets/banner.jpg") !important;
+	background-image: -ms-linear-gradient(			top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/assets/banner.jpg") !important;
+	background-image: linear-gradient(					top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/assets/banner.jpg") !important;
 	background-position: top !important;
 	background-attachment: scroll !important;
 }
