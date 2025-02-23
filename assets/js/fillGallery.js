@@ -2,6 +2,11 @@
 
 const selectedImagePath = "assets/images/gallery/featured/";
 const selectedImageData = [
+  {path: selectedImagePath + "Rose Garden.jpg"      , desc:"A painting on cardboard using traditional acrylic paints, depicting a botanical garden bathed in sunlight."},
+  {path: selectedImagePath + "Basement.jpg"         , desc:"A painting created with acrylic paints on paper, depicting the basement of an old, abandoned house."},
+  {path: selectedImagePath + "Bathroom.jpg"         , desc:"A drawing on paper created with dry pastels."},
+  {path: selectedImagePath + "Concentration.jpg"    , desc:"A portrait of a girl drawn on paper with pencils."},
+  {path: selectedImagePath + "Colorful Hummingbird.jpg", desc:"The second version of the hummingbird. A painting on paper created with acrylic paints."},
   {path: selectedImagePath + "Grandma.jpg"          , desc:"A work created with oil pastels for the 1st National Competition 'Pastel Portrait,' named after Krzysztof Krzych. It won the Grand Prix award in 2024."},
   {path: selectedImagePath + "Illusion.jpg"         , desc:"A self-portrait created with oil pastels for the 2nd National Competition 'Pastel Portrait,' named after Krzysztof Krzych."},
   {path: selectedImagePath + "Dolly.jpg"            , desc:"A digital portrait depicting the beauty of aged objects."},
@@ -17,15 +22,17 @@ const selectedImageData = [
   {path: selectedImagePath + "Timid Timmy.jpg"      , desc:"A digital portrait of a young boy seeking affection from his parents."},
   {path: selectedImagePath + "Pose 1.jpg"           , desc:"A drawing of a young woman posing. Created with pencils and graphite."},
   {path: selectedImagePath + "Pose 2.jpg"           , desc:"A drawing of a young woman posing. Created with pencils and graphite."},
-  {path: selectedImagePath + "Ruined king.jpg"           , desc:"An original portrait of Viego from League of Legends, drawn with a black pen."},
+  {path: selectedImagePath + "Ruined king.jpg"      , desc:"An original portrait of Viego from League of Legends, drawn with a black pen."},
   {path: selectedImagePath + "Hummingbird.jpg"      , desc:"A drawing of a bird, created with a pencil."},
   {path: selectedImagePath + "Neverland.jpg"        , desc:"A panorama of my fantasy interpretation of Neverland. I used ink, pen drawing, and the wash technique for this piece."},
-  {path: selectedImagePath + "Mural.jpg"            , desc:"A commissioned project created in the town of Niewodniki (Poland). It references the town’s history and was created digitally."}
+  {path: selectedImagePath + "Mural.jpg"            , desc:"A commissioned project created in the town of Niewodniki (Poland). It references the town’s history and was created digitally."},
 ];
 
 
 const sketchImagePath = "assets/images/gallery/sketches/";
 const sketchImageData = [
+  {path: sketchImagePath + "28.jpg", desc:"Test desc"},
+  {path: sketchImagePath + "29.jpg", desc:"Test desc"},
   {path: sketchImagePath + "20.jpg", desc:"Test desc"},
   {path: sketchImagePath + "21.jpg", desc:"Test desc"},
   {path: sketchImagePath + "22.jpg", desc:"Test desc"},
@@ -33,7 +40,7 @@ const sketchImageData = [
   {path: sketchImagePath + "24.jpg", desc:"Test desc"},
   {path: sketchImagePath + "25.jpg", desc:"Test desc"},
   {path: sketchImagePath + "26.jpg", desc:"Test desc"},
-  {path: sketchImagePath + "27.jpg", desc:"Test desc"}
+  {path: sketchImagePath + "27.jpg", desc:"Test desc"},
 ];
 
 
