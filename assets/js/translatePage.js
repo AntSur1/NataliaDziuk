@@ -2,7 +2,7 @@ function toggleLanguage() {
   const currentUrl = window.location.href;
   let newUrl;
 
-  if (currentUrl == "https://nataliadziuk.pl/") {
+  if (currentUrl == "https://nataliadziuk.pl") {
     newUrl = "https://nataliadziuk.pl/en/index";
   }
   else if (currentUrl.includes("/en/")) {
