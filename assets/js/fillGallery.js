@@ -22,7 +22,7 @@ const selectedImageData = [
   {path: selectedImagePath + "Timid Timmy.jpg"      , desc:"A digital portrait of a young boy seeking affection from his parents."},
   {path: selectedImagePath + "Pose 1.jpg"           , desc:"A drawing of a young woman posing. Created with pencils and graphite."},
   {path: selectedImagePath + "Pose 2.jpg"           , desc:"A drawing of a young woman posing. Created with pencils and graphite."},
-  {path: selectedImagePath + "Ruined king.jpg"      , desc:"An original portrait of Viego from League of Legends, drawn with a black pen."},
+  {path: selectedImagePath + "Ruined King.jpg"      , desc:"An original portrait of Viego from League of Legends, drawn with a black pen."},
   {path: selectedImagePath + "Hummingbird.jpg"      , desc:"A drawing of a bird, created with a pencil."},
   {path: selectedImagePath + "Neverland.jpg"        , desc:"A panorama of my fantasy interpretation of Neverland. I used ink, pen drawing, and the wash technique for this piece."},
   {path: selectedImagePath + "Mural.jpg"            , desc:"A commissioned project created in the town of Niewodniki (Poland). It references the town’s history and was created digitally."},
