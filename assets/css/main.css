@@ -3553,12 +3553,12 @@ body.is-menu-visible #menu {
 					text-transform: uppercase;
 				}
 
-					#header nav > ul > li > a.menuToggle {
+					#header nav > ul > li > a.menu-toggle {
 						outline: 0;
 						position: relative;
 					}
 
-					#header nav > ul > li > a.menuToggle:after {
+					#header nav > ul > li > a.menu-toggle:after {
 						background-image: url("icons/bars.svg");
 						background-position: right center;
 						background-repeat: no-repeat;
@@ -3578,11 +3578,11 @@ body.is-menu-visible #menu {
 							}
 							*/
 
-							#header nav > ul > li > a.menuToggle {
+							#header nav > ul > li > a.menu-toggle {
 								padding: 0 1.5em;
 							}
 
-								#header nav > ul > li > a.menuToggle span {
+								#header nav > ul > li > a.menu-toggle span {
 									display: none;
 								}
 
@@ -4072,7 +4072,7 @@ body.is-mobile #main > header {
 
 /* About */
 @media screen and (min-width: 980px) {
-	.about_me img {
+	.about-me img {
 		margin-left: 2em;
 	}
 }
