@@ -1,6 +1,6 @@
 // https://github.com/nextapps-de/spotlight?tab=readme-ov-file
 
-const selectedImagePath = "assets/images/gallery/featured/";
+const selectedImagePath = "/assets/images/gallery/featured/";
 const selectedImageData = [
   {path: selectedImagePath + "Rose Garden.jpg"      , desc:"A painting on cardboard using traditional acrylic paints, depicting a botanical garden bathed in sunlight."},
   {path: selectedImagePath + "Basement.jpg"         , desc:"A painting created with acrylic paints on paper, depicting the basement of an old, abandoned house."},
@@ -29,7 +29,7 @@ const selectedImageData = [
 ];
 
 
-const sketchImagePath = "assets/images/gallery/sketches/";
+const sketchImagePath = "/assets/images/gallery/sketches/";
 const sketchImageData = [
   {path: sketchImagePath + "28.jpg", desc:"Test desc"},
   {path: sketchImagePath + "29.jpg", desc:"Test desc"},

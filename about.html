@@ -2,10 +2,10 @@
 <!--
 	https://html5up.net/
 -->
-<html>
+<html lang="pl">
 
 <head>
-  <title>About - Natalia Dziuk</title>
+  <title>O mnie - Natalia Dziuk</title>
   
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -30,19 +30,26 @@
     <header id="header">
       <a class="clickable-logo" href="index">
         <img src="assets/images/assets/logo.png" alt="" class="nav-img">
-        <h1>Natalia Dziuk</h1>
+        <h1><span>Natalia</span><span> Dziuk</span></h1>
       </a>
 
       <nav id="nav">
         <ul>
+
+          <li>
+            <div class="language-button" id="language-toggle" onclick="toggleLanguage()">
+              <img id="language-img" src="assets/css/icons/en.png" alt="English">
+            </div>
+          </li>
+
           <li class="special">
             <a href="#menu" class="menu-toggle"><span>Menu</span></a>
             <div id="menu">
               <ul>
-                <li><a href="index" class="icon solid fa-home">Home</a></li>
-                <li><a href="gallery" class="icon solid fa-image">Gallery</a></li>
-                <li><a href="about" class="icon solid fa-user">About</a></li>
-                <li><a href="contact" class="icon solid fa-envelope">Contact</a></li>
+                <li><a href="index" class="icon solid fa-home">Strona główna</a></li>
+                <li><a href="gallery" class="icon solid fa-image">Galeria</a></li>
+                <li><a href="about" class="icon solid fa-user">O mnie</a></li>
+                <li><a href="contact" class="icon solid fa-envelope">Kontakt</a></li>
               </ul>
             </div>
           </li>
@@ -53,24 +60,24 @@
     <!-- Main -->
     <article id="main">
       <header>
-        <h2>About</h2>
+        <h2>O mnie</h2>
       </header>
 
       <section class="wrapper style5">
         <div class="inner">
 
           <section class="about-me">
-            <h3>Heyoo!</h3>
+            <h3>Hejooo!</h3>
             <div class="row">
               <div class="col-6 col-12-medium">
                 <p>
-                  My name is Natalia Dziuk. I’m a young studying artist from Poland. I go to art school and enjoy pursuing my passions.
+                  Nazywam się Natalia Dziuk. Jestem młodą artystką z Polski, w trakcie nauki. Uczęszczam do szkoły plastycznej i świetnie się bawię, realizując siebie i swoje pasje.
                   <br><br>
-                  I started my adventure with art some years ago through drawing, but that's not the only thing I do now. I love all kinds of manual work, like painting, crocheting, sewing, and carving. I'm also interested in digital painting. When it comes to traditional techniques, I usually use pencils, ink, fineliners, or acrylic paints. Right now, I’m in the process of experimenting and searching for my own style, so I enjoy trying out different ideas and fantasies.
+                  Przygodę ze sztuką zaczęłam kilka lat temu od rysunku, lecz to nie jest jedyne, czym się teraz zajmuję. Uwielbiam wszystkie prace manualne, takie jak malowanie, szydełkowanie, szycie i rzeźbienie. Interesuje mnie grafika komputerowa, a jeśli chodzi o techniki klasyczne, najczęściej korzystam z ołówków, tuszu, cienkopisów lub farb akrylowych. Jestem na etapie testowania i szukania swojego stylu, więc różne fantazje i eksperymenty również wchodzą w grę.
                   <br><br>
-                  This website was designed and programmed by Antoni Surmiński to support me in my artistic journey. I hope that everyone who visits gets to know my creative process, finds something that speaks to them, and maybe even takes a piece of it with them. If you’d like to order something from me, feel free to contact me on the <a href="contact">contact page</a>.
+                  Tę stronę zaprojektował Antoni Surmiński, aby mi pomóc w rozwoju. Chcę, żeby ludzie poznali mój sposób tworzenia, znaleźli coś dla siebie i mogli otrzymać część tego. Byłoby mi bardzo miło, gdybyście chcieli coś u mnie zamówić. Jeśli tak, skontaktujcie się ze mną <a href="contact">tutaj</a>.
                   <br><br>
-                  Enjoy my work and welcome!
+                  Miłego oglądania i zapraszam!
                 </p>
               </div>
               
@@ -94,7 +101,7 @@
       </ul>
       <ul class="copyright">
         <li>&copy; Natalia Dziuk</li><li>
-          Programmer: <a href="https://github.com/AntSur1/">Antoni Surminski</a></li><li>
+          Programista: <a href="https://github.com/AntSur1/">Antoni Surminski</a></li><li>
           Design: <a href="http://html5up.net">HTML5 UP</a></li>
       </ul>
     </footer>
@@ -109,6 +116,7 @@
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/translatePage.js"></script>
 
 </body>
 

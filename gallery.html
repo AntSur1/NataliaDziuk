@@ -2,10 +2,10 @@
 <!--
 	https://html5up.net/
 -->
-<html>
+<html lang="pl">
 
 <head>
-  <title>Gallery - Natalia Dziuk</title>
+  <title>Galeria - Natalia Dziuk</title>
   
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -13,9 +13,21 @@
   <link rel="icon" type="image/x-ico" href="assets/images/assets/ico.ico">
 
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Commission a talented artist for custom illustrations, portraits, and unique artwork tailored to your vision. High-quality, personalized art for any occasion.">
+  <meta name="description" content="Zamawiaj u utalentowanej artystki personalizowane ilustracje, portrety i unikalne prace zgodne z twoją wizją.">
   <meta name="robots" content="index, follow"> 
   <link rel="canonical" href="https://nataliadziuk.pl/"> 
+
+  <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+  <meta property="og:title" content="Sztuka Natalii Dziuk">
+  <meta property="og:description" content="Zamawiaj u utalentowanej artystki personalizowane ilustracje, portrety i unikalne prace zgodne z twoją wizją.">
+  <meta property="og:image" content="https://nataliadziuk.pl/assets/images/assets/banner.jpg">
+  <meta property="og:url" content="https://nataliadziuk.pl/">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sztuka Natalii Dziuk">
+  <meta name="twitter:description" content="Zamawiaj u utalentowanej artystki personalizowane ilustracje, portrety i unikalne prace zgodne z twoją wizją.">
+  <meta name="twitter:image" content="https://nataliadziuk.pl/assets/images/assets/banner.jpg">
   
   <noscript>
     <link rel="stylesheet" href="assets/css/noscript.css" />
@@ -31,19 +43,26 @@
     <header id="header">
       <a class="clickable-logo" href="index">
         <img src="assets/images/assets/logo.png" alt="" class="nav-img">
-        <h1>Natalia Dziuk</h1>
+        <h1><span>Natalia</span><span> Dziuk</span></h1>
       </a>
 
       <nav id="nav">
         <ul>
+
+          <li>
+            <div class="language-button" id="language-toggle" onclick="toggleLanguage()">
+              <img id="language-img" src="assets/css/icons/en.png" alt="English">
+            </div>
+          </li>
+
           <li class="special">
             <a href="#menu" class="menu-toggle"><span>Menu</span></a>
             <div id="menu">
               <ul>
-                <li><a href="index" class="icon solid fa-home">Home</a></li>
-                <li><a href="gallery" class="icon solid fa-image">Gallery</a></li>
-                <li><a href="about" class="icon solid fa-user">About</a></li>
-                <li><a href="contact" class="icon solid fa-envelope">Contact</a></li>
+                <li><a href="index" class="icon solid fa-home">Strona główna</a></li>
+                <li><a href="gallery" class="icon solid fa-image">Galeria</a></li>
+                <li><a href="about" class="icon solid fa-user">O mnie</a></li>
+                <li><a href="contact" class="icon solid fa-envelope">Kontakt</a></li>
               </ul>
             </div>
           </li>
@@ -54,15 +73,15 @@
     <!-- Main -->
     <article id="main">
       <header>
-        <h2>Gallery</h2>
+        <h2>Galeria</h2>
       </header>
 
       <section class="wrapper style5">
         <div class="inner">
 
           <section>
-            <button class="button primary" id="selected">Selected</button>
-            <button id="sketch">Sketches</button>
+            <button class="button primary" id="selected">Wybrane</button>
+            <button id="sketch">Szkice</button>
             <br>
           </section>
 
@@ -85,7 +104,7 @@
       </ul>
       <ul class="copyright">
         <li>&copy; Natalia Dziuk</li><li>
-          Programmer: <a href="https://github.com/AntSur1/">Antoni Surminski</a></li><li>
+          Programista: <a href="https://github.com/AntSur1/">Antoni Surminski</a></li><li>
           Design: <a href="http://html5up.net">HTML5 UP</a></li>
       </ul>
     </footer>
@@ -102,7 +121,8 @@
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/fillGallery.js"></script>
+  <script src="assets/js/fillGalleryPL.js"></script>
+  <script src="assets/js/translatePage.js"></script>
   
 
 
