@@ -2,6 +2,7 @@ function toggleLanguage() {
   const currentUrl = window.location.href;
   let newUrl;
 
+  console.log("currentUrl");
   if (currentUrl == "https://nataliadziuk.pl") {
     newUrl = "https://nataliadziuk.pl/en/index";
   }
