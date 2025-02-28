@@ -5,7 +5,7 @@ function toggleLanguage() {
   console.log(1);
   console.log(currentUrl);
   if (currentUrl == "https://nataliadziuk.pl/") {
-    newUrl = currentUrl + "/en/index";
+    newUrl = currentUrl + "en/index";
   }
   else if (currentUrl.includes("/en/")) {
     // If the URL contains "/en/", remove it and redirect to Polish version
