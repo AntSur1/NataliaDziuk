@@ -4,7 +4,7 @@ function toggleLanguage() {
 
   console.log(1);
   console.log(currentUrl);
-  if (currentUrl == "https://nataliadziuk.pl/") {
+  if (currentUrl == "https://nataliadziuk.pl") {
     newUrl = currentUrl + "en/index";
   }
   else if (currentUrl.includes("/en/")) {
