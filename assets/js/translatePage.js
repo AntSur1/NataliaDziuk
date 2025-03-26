@@ -3,7 +3,7 @@ function toggleLanguage() {
   const enUrl = currentUrl.replace(currentUrl, currentUrl +"en/index");
   let newUrl;
 
-  console.log(5);
+  console.log(6);
   console.log(window.location.pathname);
   console.log(enUrl);
   if (window.location.pathname == "/") {
