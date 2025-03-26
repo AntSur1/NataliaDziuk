@@ -6,7 +6,7 @@ function toggleLanguage() {
   console.log(5);
   console.log(window.location.pathname);
   console.log(enUrl);
-  if (currentUrl == "https://nataliadziuk.pl") {
+  if (window.location.pathname == "/") {
     console.log("debug");
     newUrl = enUrl;
   }
