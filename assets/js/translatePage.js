@@ -3,11 +3,12 @@ function toggleLanguage() {
   const enUrl = currentUrl.replace(currentUrl, currentUrl +"en/index");
   let newUrl;
 
-  console.log(4);
+  console.log(5);
   console.log(window.location.pathname);
   console.log(enUrl);
   if (currentUrl == "https://nataliadziuk.pl") {
-    newUrl = currentUrl + "en/index";
+    console.log("debug");
+    newUrl = enUrl;
   }
   else if (currentUrl.includes("/en/")) {
     // If the URL contains "/en/", remove it and redirect to Polish version
@@ -16,7 +17,7 @@ function toggleLanguage() {
   else {
     // If the URL doesn't contain "/en/", add "/en/" to the path and redirect to English version
     if (currentUrl.includes("/")) {
-      newUrl = enUrl;
+      newUrl = currentUrl.replace(window.location.pathname, "/en" + window.location.pathname);
     } 
     else {
       newUrl = currentUrl + "/en";
