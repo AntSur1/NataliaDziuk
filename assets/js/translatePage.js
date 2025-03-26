@@ -2,8 +2,6 @@ function toggleLanguage() {
   const currentUrl = window.location.href;
   let newUrl;
 
-  console.log(6);
-  console.log(window.location.pathname);
   if (window.location.pathname == "/") {
     console.log("debug");
     newUrl = currentUrl.replace(currentUrl, currentUrl +"en/index");
