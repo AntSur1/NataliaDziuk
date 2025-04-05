@@ -142,20 +142,18 @@
       
       // reorder the elements in the array
       
-      var columnCount = document.getElementById("gallery").childElementCount;
+      var columnCount = document.getElementById("gallery").childElementCount ;
+      var numRows = Math.ceil(C.length / columnCount);
       var reordered = [];
-      for (var i = 0; i < columnCount; i++) {
-        var row = [];
-        for (var j = 0; j < C.length; j++) {
-          if (j % columnCount === i) {
-            row.push(C[j]);
+      for (var i = 0; i < numRows; i++) {
+        for (var j = 0; j < columnCount; j++) {
+          var index = i + j * numRows; // Correct index logic for columns
+          if (index < C.length) {
+            reordered.push(C[index]);
           }
         }
-        reordered.push(row);
       }
-      reordered = reordered.flat();
-      console.log(C);
-      console.log(reordered);
+      
       C = reordered;
 
       for (var c = 0; c < C.length; c++) if (C[c] === b) {
