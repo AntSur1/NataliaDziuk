@@ -102,7 +102,6 @@ function reLoadGallery(imageData, shouldDisplayInfo) {
     const title = shouldDisplayInfo ? item.title: false; 
     const description = shouldDisplayInfo ? item.desc : false; 
 
-
     const colIndex = index % numColumns; // Determine the column for this image
     const imageHTML = `
       <span class="image fit">
