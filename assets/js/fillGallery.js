@@ -69,13 +69,16 @@ const sketchImageData = [
   {path: sketchImagePath + "27.jpg", desc:"Test desc"},
 ];
 
+const tattooImagePath = "/assets/images/gallery/sketches/";
+const tattooImageData = [
+  {path: tattooImagePath + "28.jpg", desc:"Test desc"},
+  {path: tattooImagePath + "28.jpg", desc:"Test desc"},
+  {path: tattooImagePath + "28.jpg", desc:"Test desc"},
+  {path: tattooImagePath + "28.jpg", desc:"Test desc"},
+];
+
 const href = window.location.href;
-let selectedImageData = selectedImageDataPL;
-
-if (href.includes("/en/")) {
-  selectedImageData = selectedImageDataEN;
-}
-
+let selectedImageData = href.includes("/en/") ? selectedImageDataEN : selectedImageDataPL; 
 
 function reLoadGallery(imageData, shouldDisplayInfo) {
 
@@ -115,22 +118,37 @@ function reLoadGallery(imageData, shouldDisplayInfo) {
 }
 
 
-function showFeatured() {
-  reLoadGallery(selectedImageData, true);
-  document.querySelector("button#sketch").removeAttribute("class");
-  document.querySelector("button#selected").setAttribute("class", "button primary");
+function showImages(displayTheme) {
+  switch (displayTheme) {
+    case "selected":
+      imageDataSet = selectedImageData;
+      shouldDisplayInfo = true;
+      buttonSelector = "button#selected";
+      break;
+    
+    case "sketch":
+      imageDataSet = sketchImageData;
+      shouldDisplayInfo = false;
+      buttonSelector = "button#sketch";
+      break;
+
+    case "tattoo":
+      imageDataSet = tattooImageData;
+      shouldDisplayInfo = false;
+      buttonSelector = "button#tattoo";
+      break; 
+  }
+
+  reLoadGallery(imageDataSet, shouldDisplayInfo);
+  document.querySelector("button.button").removeAttribute("class");
+  document.querySelector(buttonSelector).setAttribute("class", "button primary");
+
 }
 
-function showSketches() {
-  reLoadGallery(sketchImageData, false);
-  document.querySelector("button#selected").removeAttribute("class");
-  document.querySelector("button#sketch").setAttribute("class", "button primary");
-}
+document.addEventListener("DOMContentLoaded", showImages("selected") );
 
+document.querySelector("button#selected") .addEventListener("click", ()=>{  showImages("selected")  });
+//document.querySelector("button#tattoo")   .addEventListener("click", ()=>{  showImages("tattoo")  });
+document.querySelector("button#sketch")   .addEventListener("click", ()=>{  showImages("sketch")  });
 
-
-document.addEventListener("DOMContentLoaded", showFeatured );
-
-document.querySelector("button#selected").addEventListener("click", showFeatured );
-
-document.querySelector("button#sketch").addEventListener("click", showSketches );
+document.querySelector("button#tattoo").disabled = true;

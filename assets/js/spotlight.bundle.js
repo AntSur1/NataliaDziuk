@@ -145,6 +145,7 @@
       var columnCount = document.getElementById("gallery").childElementCount ;
       var numRows = Math.ceil(C.length / columnCount);
       var reordered = [];
+      
       for (var i = 0; i < numRows; i++) {
         for (var j = 0; j < columnCount; j++) {
           var index = i + j * numRows; // Correct index logic for columns
