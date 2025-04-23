@@ -3979,6 +3979,19 @@ body.is-mobile #main > header {
 	border-bottom: dotted 1px; 
 }
 
+/* Gallery */
+.button-wrapper {
+    display: flex;
+  }
+
+  /* Media query for smaller screens */
+  @media (max-width: 500px) {
+    .button-wrapper {
+      display: flex;
+      flex-direction: column; 
+    }
+  }
+
 /* Contact */
 
 .contact {
