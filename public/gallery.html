@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 <!--
 	https://html5up.net/
-  https://rhienon.com/
 -->
 <html lang="pl">
 
 <head>
-  <title>Sztuka Natalii Dziuk</title>
+  <title>Galeria - Natalia Dziuk</title>
+  
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="/assets/css/main.css" />
@@ -16,7 +16,7 @@
   <meta name="description" content="Zamawiaj u utalentowanej artystki personalizowane ilustracje, portrety i unikalne prace zgodne z twoją wizją.">
   <meta name="robots" content="index, follow"> 
   <link rel="canonical" href="https://nataliadziuk.pl/"> 
-  
+
   <!-- Open Graph (Facebook, LinkedIn, etc.) -->
   <meta property="og:title" content="Sztuka Natalii Dziuk">
   <meta property="og:description" content="Zamawiaj u utalentowanej artystki personalizowane ilustracje, portrety i unikalne prace zgodne z twoją wizją.">
@@ -28,7 +28,7 @@
   <meta name="twitter:title" content="Sztuka Natalii Dziuk">
   <meta name="twitter:description" content="Zamawiaj u utalentowanej artystki personalizowane ilustracje, portrety i unikalne prace zgodne z twoją wizją.">
   <meta name="twitter:image" content="https://nataliadziuk.pl/assets/images/assets/banner.jpg">
-
+  
   <noscript>
     <link rel="stylesheet" href="/assets/css/noscript.css" />
   </noscript>
@@ -72,9 +72,29 @@
 
     <!-- Main -->
     <article id="main">
-      <header id="head">
-        <h2>Sztuka Natalii Dziuk</h2>
+      <header>
+        <h2>Galeria</h2>
       </header>
+
+      <section class="wrapper style5">
+        <div class="inner">
+
+          <section class="button-wrapper">
+            <button class="button primary" id="selected">Wybrane</button>
+            <button id="tattoo">Tatuaże</button>
+            <button id="sketch">Szkice</button>
+            <br>
+          </section>
+
+          <section>
+            <br>
+            <div class="box alt">
+              <div class="row gtr-50 gtr-uniform gallery-Container" id="gallery"></div>
+            </div>
+          </section>
+
+        </div>
+      </section>
     </article>
 
     <!-- Footer -->
@@ -91,6 +111,8 @@
     </footer>
 
   </div>
+  <!-- Load lightbox -->
+   <script src="/assets/js/spotlight.bundle.js"></script>
 
   <!-- Scripts -->
   <script src="/assets/js/jquery.min.js"></script>
@@ -102,6 +124,8 @@
   <script src="/assets/js/main.js"></script>
   <script type="module" src="/fillGallery.js"></script>
   <script src="/assets/js/translatePage.js"></script>
+  
+
 
 </body>
 
