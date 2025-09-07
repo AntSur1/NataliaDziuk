@@ -1,0 +1,4 @@
+User-agent: *
+Sitemap: https://nataliadziuk.pl/sitemap.xml
+Disallow: /TEMPLATE.html
+Disallow: /elements.html
