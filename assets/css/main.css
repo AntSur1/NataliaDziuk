@@ -12,6 +12,7 @@
 	--dark_c: #614291;
 	--dark_c_dark: #51347e;
 	--dark_c_dark_dark: #3f2764;
+    --accent:#7bdcff;
 	--url_banner: url("../../assets/images/assets/banner.jpg");
 	--url_head: url("../../assets/images/assets/banner.jpg");
   }
@@ -3984,6 +3985,10 @@ body.is-mobile #main > header {
     display: flex;
   }
 
+  .button-wrapper button {
+	margin-right: 12px;
+  }
+
   /* Media query for smaller screens */
   @media (max-width: 500px) {
     .button-wrapper {
@@ -3991,9 +3996,9 @@ body.is-mobile #main > header {
       flex-direction: column; 
     }
 
-		.button-wrapper > button {
-			margin-bottom: 1em ;
-		}
+	.button-wrapper > button {
+		margin-bottom: 1em ;
+	}
 
   }
 
@@ -4009,7 +4014,6 @@ body.is-mobile #main > header {
 	width: 768px;
 	max-width: 100%;
 	min-height: 480px;
-  	min-width:370px;
 	display: flex;
 }
 
@@ -4027,7 +4031,7 @@ body.is-mobile #main > header {
 .left-container {
 	flex:1;
 	height:480px;
-	background-color: var(--light_c);
+	background-color: var(--dark_c);
 }
 
 	.left-container h2 {
@@ -4058,6 +4062,7 @@ body.is-mobile #main > header {
 
 .right-inner-container {
 	height:70%;
+	margin: 40px;
 }
 
 .left-inner-container {
@@ -4069,6 +4074,7 @@ body.is-mobile #main > header {
 
 .left-inner-container img {
 	width: 100%;
+	border:3px solid var(--accent);
 }
 
 .contact ul {
@@ -4113,9 +4119,12 @@ body.is-mobile #main > header {
 	.left-container{
 		display: none;
 	}
-	.lg-view {
-		display:none;  
+	.right-container{
+		overflow: hidden;
 	}
+	/* .lg-view {
+		display:none;  
+	} */
 }
 
 /* About */
