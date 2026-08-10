@@ -3998,6 +3998,8 @@ body.is-mobile #main > header {
 
 	.button-wrapper > button {
 		margin-bottom: 1em ;
+		width: 100%;
+		max-width: 100%;
 	}
 
   }
