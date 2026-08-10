@@ -3990,7 +3990,7 @@ body.is-mobile #main > header {
   }
 
   /* Media query for smaller screens */
-  @media (max-width: 808px) {
+  @media (max-width: 830px) {
     .button-wrapper {
       display: flex;
       flex-direction: column; 
