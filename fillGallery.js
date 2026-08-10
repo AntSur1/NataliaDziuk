@@ -125,6 +125,11 @@ async function showImages(displayTheme) {
       shouldDisplayInfo = true;
       buttonSelector = "button#tattoo";
       break; 
+
+    case "credentials":
+      shouldDisplayInfo = true;
+      buttonSelector = "button#credentials";
+      break; 
   }
 
   reLoadGallery(imageDataSet, shouldDisplayInfo);
@@ -138,3 +143,4 @@ document.addEventListener("DOMContentLoaded", () => showImages("selected") );
 document.querySelector("button#selected") .addEventListener("click", ()=>{  showImages("selected")  });
 document.querySelector("button#tattoo")   .addEventListener("click", ()=>{  showImages("tattoo")  });
 document.querySelector("button#sketch")   .addEventListener("click", ()=>{  showImages("sketches")  });
+document.querySelector("button#credentials").addEventListener("click", ()=>{ showImages("credentials")  });
