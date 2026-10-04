@@ -25,6 +25,12 @@ function detachPreviousListener() {
   }
 }
 
+function sortByOrder([, a], [, b]) {
+    if (a.orderNr == null) return 1;
+    if (b.orderNr == null) return -1;
+    return b.orderNr - a.orderNr;
+}
+
 function loadUserImages(selectedTab, inEnglish) {
   return new Promise((resolve, reject) => {
     const imagesRef = dbRef(db, `webPage/${selectedTab}`);
@@ -43,7 +49,7 @@ function loadUserImages(selectedTab, inEnglish) {
         }
 
         const res = Object.entries(data)
-          .reverse()
+          .sort(sortByOrder)
           .map(([keyId, { image, plTitle, plDesc, enTitle, enDesc }]) => {
             if (inEnglish) {
               return { path: image, title: enTitle, desc: enDesc };
